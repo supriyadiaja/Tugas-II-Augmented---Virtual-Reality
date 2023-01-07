@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Kebun Binatang Virtual</title>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <!-- asset 3D -->
+        <a-asset-item id="tiger-model" src="models/tiger.obj"></a-asset-item>
+      </a-assets>
+
+      <a-entity position="0 1 -2" rotation="0 -90 0" scale="0.2 0.2 0.2" obj-model="obj: #tiger-model" width="3" height="1"></a-entity>
+
+      <!-- langit -->
+      <a-sky color="#6EBAA7"></a-sky>
+
+      <!-- tananh -->
+      <a-plane position="0 0 0" rotation="-90 0 0" width="100" height="100" color="#A9D0D4"></a-plane>
+
+      <!-- model hewan -->
+      <a-tiger position="0 3 -2"></a-tiger>
+    </a-scene>
+  </body>
+</html>
